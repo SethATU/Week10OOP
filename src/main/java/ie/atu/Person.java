@@ -14,9 +14,9 @@ public class Person {
 
     //constructor parametrised
     public Person(String name, String address, String phoneNumber) {
-        this.name = "Seth";
-        this.address = "ATU Galway";
-        this.phoneNumber = "0838940848";
+        this.name = name;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
     }
 
     //getters

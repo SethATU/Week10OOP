@@ -5,7 +5,7 @@ public class Customer extends Person {
     private boolean mailingList;
 
     //constructor
-    public Customer(int customerNumber, boolean mailingList, String name, String address, String phoneNumber) {
+    public Customer(String name, String address, String phoneNumber, int customerNumber, boolean mailingList) {
         super(name, address, phoneNumber);
         this.customerNumber = customerNumber;
         this.mailingList = mailingList;
@@ -24,8 +24,8 @@ public class Customer extends Person {
     public boolean getMailingList() {return mailingList;}
 
     //setters
-    public void setCustomerNumber(int customerNumber) {this.customerNumber = 0;}
-    public void setMailingList(boolean mailingList) {this.mailingList = true;}
+    public void setCustomerNumber(int customerNumber) {this.customerNumber = customerNumber;}
+    public void setMailingList(boolean mailingList) {this.mailingList = mailingList;}
 
     @Override
     public String toString() { return "Customer{" + "person=" + super.toString() + ", CustomerNumber=" + customerNumber +", mailingList=" + mailingList + '}';}
